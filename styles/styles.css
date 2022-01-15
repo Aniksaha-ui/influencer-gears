@@ -128,11 +128,16 @@ header,main{
     color: yellow;
 }
 
+.fa-star.empty{
+    color: rgb(221, 221, 197);
+}
+
 .rating-number{
     margin-left:10px;
 }
 
 .show-more{
+    
     text-align: right;
 }
 
@@ -151,7 +156,7 @@ header,main{
         }
         .trand-product{
             display: flex;
-            align-items: center;
+            /* align-items: center; */
         }
 
   
@@ -186,10 +191,11 @@ header,main{
         .footer{
             width: 100%;
             margin-top: 40px;
-            background-color: #1F2D26;
+            background-color: #090214;
             text-align: center;
             color: white;
             font-size: 16px;
+         
 
         }
 
