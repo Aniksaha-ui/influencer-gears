@@ -4,7 +4,7 @@
 
 
 body{
-   
+   margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
     box-sizing: border-box;
@@ -162,8 +162,24 @@ header,main{
 /* trand section end*/
 
 
+   /* footer section */
+        .footer{
+            background-color: #1F2D26;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+
+        }
+
+        .footer .social-media-icon{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            
+        }
 
 
+   /* footer section */
+   
 
 
 
@@ -172,14 +188,10 @@ header,main{
 @media only screen and (max-width:576px) {
 
     /* utilies */
-    .top-container{
+    .top-container,.container{
         width: 100%;
     }
     
-    .container{
-        
-        width: 100%;
-    }
     /* utilies */
 
     /* top-bar-header */
@@ -222,17 +234,23 @@ header,main{
         text-align: justify;
        margin-right:30px;
     }
+   
     .trand-description h3{
         font-size: 20px;
         text-align: center;
       
        
     } */
+  
     .trand-description p{
         font-size: 16px;
     }
 
     /* trand product end */
+
+
+    /* footer */
+
 
 
 
