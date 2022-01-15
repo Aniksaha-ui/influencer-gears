@@ -283,7 +283,7 @@ header,main{
 
 /* tablet version */
 
-    @media only screen and (min-width:577px) and (max-width:800px){
+    @media only screen and (min-width:577px) and (max-width:768px){
        
         /* top-bar design */
         .top-header-title{
