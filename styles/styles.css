@@ -22,14 +22,16 @@ header,main{
     width: 1050px;
     padding:20px;
     margin-top: 100px;
-
-    
 }
 
 /* utilites end */
 
 
 /* top-menu */
+.header-name{
+    text-align: center;
+}
+
 .top-container{
     width: 1250px;
     background-color: white;
@@ -171,6 +173,7 @@ header,main{
 
    /* footer section */
         .footer{
+            width: 100%;
             margin-top: 40px;
             background-color: #1F2D26;
             text-align: center;
