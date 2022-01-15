@@ -5,7 +5,8 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #F3F1FF;;
+    background-color: #F3F1FF;
+    box-sizing: border-box;
 }
 
 header{
@@ -32,10 +33,12 @@ main{
 
 /* top-menu */
 .top-container{
-    width: 1180px;
+    width: 1250px;
     background-color: white;
     padding: 30px;
 }
+
+
 .top-header-title{
     font-size: 52px;
 }
@@ -44,13 +47,17 @@ main{
 .top-bar{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    
+    grid-gap: 133px;
 }
+
 
 .top-bar .top-image{
     width: 440px;
-    height: 414px;
-    margin-left: 133px;
+    
+}
+
+.top-description{
+    width:100% ;
 }
 
 .top-bar .top-description a{
@@ -115,3 +122,42 @@ main{
 
 /* popular section design */
 
+
+
+
+/* Responsive design */
+
+@media only screen and (max-width:576px) {
+
+    
+    .top-container{
+        width: 100%;
+    }
+    
+    .container{
+        width: 100%;
+    }
+
+    .header-description{
+        margin-right: 120px;
+    }
+    
+
+    .top-bar{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .top-bar .top-image{
+        margin: 0;
+        align-items: flex-start;
+     
+    }
+    
+    .popular-products{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .product{
+        flex-direction: column;
+    }
+    
+}
