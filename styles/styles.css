@@ -2,12 +2,18 @@
 /* utilites */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body{
    margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
-    box-sizing: border-box;
+    
 }
 
 header,main{
@@ -19,7 +25,6 @@ header,main{
 
 .container{
     background-color: rgb(247, 239, 239);
-    width: 1050px;
     padding:20px;
     margin-top: 100px;
 }
@@ -33,8 +38,8 @@ header,main{
 }
 
 .top-container{
-    width: 1250px;
-    background-color: white;
+    margin: 0 10%;
+    background-color:white;
     padding: 30px;
 }
 
@@ -59,7 +64,7 @@ header,main{
 
 
 .top-bar .top-image{
-    width: 440px;
+    width: 30%;
     
 }
 
@@ -90,7 +95,7 @@ header,main{
 .popular-products{
     display: grid;
     grid-template-columns:repeat(3,1fr) ;
-    grid-row-gap: 30px;
+    grid-gap: 30px;
    
 }
 
@@ -98,10 +103,6 @@ header,main{
     background: #FFFFFF;
     padding-left: 15px;
     width: 329px;
-    
-    
-    /* box-shadow: 10px 10px 20px #e6d2d2; */
-  
 }
 
 .product-info p{
@@ -113,8 +114,8 @@ header,main{
 
 .popular-products .product-image img{
     margin-top: 50px;
-    width: 300px;
-    height: 256px;
+    width: 100%;
+   
 }
 
 
@@ -127,6 +128,10 @@ header,main{
     margin-left:10px;
 }
 
+.show-more{
+    text-align: right;
+}
+
 /* popular section design */
 
 
@@ -137,6 +142,8 @@ header,main{
             display: grid;
             grid-template-columns: repeat(1,1fr);
             grid-gap: 96px;
+            width: 90%;
+            margin: 0 10%;
         }
         .trand-product{
             display: flex;
@@ -229,13 +236,15 @@ header,main{
         flex-direction: column;
     }
 
+    
+
     /* popular product */
 
 
     /* trand product */
 
     .trand .trand-product .trand-image{
-        /* margin-right: 150px; */
+        margin-right: 70px;
         width: 256px;
     }
 
@@ -293,6 +302,8 @@ header,main{
     .product,.trand-product{
         flex-direction: column;
     }
+
+
 
     /* popular product */
 
