@@ -4,27 +4,25 @@
 
 
 body{
+   
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
     box-sizing: border-box;
 }
 
-header{
+header,main{
     display: flex;
     flex-direction: column;
     align-items:center;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-}
 
 .container{
-    width: 1047px;
+    background-color: rgb(247, 239, 239);
+    width: 1050px;
     padding:20px;
     margin-top: 100px;
+
     
 }
 
@@ -70,11 +68,10 @@ main{
     border-radius: 5px;
     
 }
-
 /* top-menu end*/
 
-
 /* popular section design */
+
 .popular-collection-header{
     text-align: center;
     margin-bottom: 30px;
@@ -84,8 +81,7 @@ main{
 .popular-products{
     display: grid;
     grid-template-columns:repeat(3,1fr) ;
-   grid-row-gap: 30px;
-   grid-column-gap: 30px;
+    grid-row-gap: 30px;
    
 }
 
@@ -93,7 +89,9 @@ main{
     background: #FFFFFF;
     padding-left: 15px;
     width: 329px;
-    box-shadow: 10px 10px 20px #e6d2d2;
+    
+    
+    /* box-shadow: 10px 10px 20px #e6d2d2; */
   
 }
 
@@ -124,20 +122,67 @@ main{
 
 
 
+/* trand section */
+
+        .trand{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 96px;
+        }
+        .trand-product{
+            display: flex;
+            align-items: center;
+        }
+
+  
+
+        .trand-description{
+            margin-left: 96px;
+            text-align: justify;
+        }
+        .trand-description h3{
+            font-size: 38px;
+            text-align: center;
+          
+           
+        }
+        .trand-description p{
+            font-size: 16px;
+        }
+
+        .trand-product .trand-description a{
+              text-decoration: none;
+    font-size: 16px;
+    background-color:  #E02C6D;
+    padding: 10px 30px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+        }
+/* trand section end*/
+
+
+
+
+
+
 
 /* Responsive design */
 
 @media only screen and (max-width:576px) {
 
-    
+    /* utilies */
     .top-container{
         width: 100%;
     }
     
     .container{
+        
         width: 100%;
     }
+    /* utilies */
 
+    /* top-bar-header */
     .header-description{
         margin-right: 120px;
     }
@@ -145,19 +190,51 @@ main{
 
     .top-bar{
         grid-template-columns: repeat(1,1fr);
+      
     }
 
-    .top-bar .top-image{
-        margin: 0;
-        align-items: flex-start;
-     
-    }
-    
+   
+    /* top-bar-header */
+
+    /* popular product */
+
     .popular-products{
         grid-template-columns: repeat(1,1fr);
     }
-    .product{
+    .product,.trand-product{
         flex-direction: column;
     }
+
+    /* popular product */
+
+
+    /* trand product */
+
+    .trand .trand-product .trand-image{
+        margin-right: 150px;
+        width: 256px;
+    }
+
+
+
+    .trand-description{
+        margin-left: 20px;
+        text-align: justify;
+       margin-right:30px;
+    }
+    .trand-description h3{
+        font-size: 20px;
+        text-align: center;
+      
+       
+    } */
+    .trand-description p{
+        font-size: 16px;
+    }
+
+    /* trand product end */
+
+
+
     
 }
